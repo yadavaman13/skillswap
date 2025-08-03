@@ -1,11 +1,9 @@
 import React from 'react'
-import nav from '../components/Navbar'
 
 const HomePage = () => {
   return (
     <div>
-
-      <h1>home page</h1>
+      <h1 className='bg-amber-700 item place-content-center'>home page</h1>
     </div>
   )
 }
