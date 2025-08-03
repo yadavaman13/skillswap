@@ -11,6 +11,8 @@ const Navbar = () => {
         <Link to="/" className='text-white mr-4 hover:underline'>Home</Link>
         <Link to="/skillswap" className='text-white mr-4 hover:underline'>Skill Swap</Link>
         <Link to="/contact" className='text-white mr-4 hover:underline'>Contact</Link>
+        <Link to="/Register" className='text-white mr-4 hover:underline'>Register</Link>
+        <Link to="/Login" className='text-white mr-4 hover:underline'>Login</Link>
       </nav>
     </div>
   )
