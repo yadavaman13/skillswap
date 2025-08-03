@@ -9,6 +9,7 @@ const Navbar = () => {
       </nav>
       <nav className='items-end'>
         <Link to="/" className='text-white mr-4 hover:underline'>Home</Link>
+        <Link to="/skillswap" className='text-white mr-4 hover:underline'>Skill Swap</Link>
         <Link to="/contact" className='text-white mr-4 hover:underline'>Contact</Link>
       </nav>
     </div>
