@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from './components/Form'
+import Form from './pages/Form'
 const App = () => {
   return (
     <div>
