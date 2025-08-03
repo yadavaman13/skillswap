@@ -1,9 +1,18 @@
 import React from 'react'
-import Form from './pages/login'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Navbar from './components/Navbar';
+
 const App = () => {
   return (
     <div>
-      <Form />
+  
+      <BrowserRouter>
+      <Routes>
+   
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   )
 }
