@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css'
 
-import { RiUserLine, RiLockLine } from "@remixicon/react";
-
 const Register = () => {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
@@ -30,7 +28,7 @@ const Register = () => {
               <div /* Input wrapper for input fields and icons */
                 className='border-2 border-black-300 rounded-lg p-2.5 flex items-center gap-2'
               >
-                <RiUserLine className="input-icon" />
+                <i className="ri-user-line input-icon"></i>
                 <input className="input-container border-none outline-0" placeholder="Username" type="text" name="" id="" value={username} onChange={(e) => {
                   setUserName(e.target.value)
                 }}
@@ -39,7 +37,7 @@ const Register = () => {
               <div /* Input wrapper for input fields and icons */
                 className='border-2 border-black-300 rounded-lg p-2.5 flex gap-2 items-center'
               >
-                <RiLockLine className="input-icon" />
+                <i className="ri-lock-line input-icon"></i>
                 <input className="input-container border-none outline-0" placeholder="Password" type="text" name="" id="" value={password} onChange={(e) => {
                   setPassword(e.target.value)
                 }}
