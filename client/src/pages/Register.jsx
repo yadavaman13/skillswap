@@ -21,24 +21,22 @@ const Register = () => {
           /* This div-container contains the login form */
             className="shadow-lg rounded-xl p-10 flex items-center justify-center gap-10 flex-col"
           >
-            <h1 className='text-3xl font-bold'>Login</h1>
+            <h1 className='text-3xl font-bold'>Register</h1>
             <form
               className=" flex items-center flex-col gap-5"
               action="" onSubmit={handleForm}>
-              <div /* Input wrapper for input fields and icons */
+              <div /* Input wrapper for input fields */
                 className='border-2 border-black-300 rounded-lg p-2.5 flex items-center gap-2'
               >
-                <i className="ri-user-line input-icon"></i>
-                <input className="input-container border-none outline-0" placeholder="Username" type="text" name="" id="" value={username} onChange={(e) => {
+                <input className="input-container border-none outline-0 w-full" placeholder="Username" type="text" name="" id="" value={username} onChange={(e) => {
                   setUserName(e.target.value)
                 }}
                 />
               </div>
-              <div /* Input wrapper for input fields and icons */
+              <div /* Input wrapper for input fields */
                 className='border-2 border-black-300 rounded-lg p-2.5 flex gap-2 items-center'
               >
-                <i className="ri-lock-line input-icon"></i>
-                <input className="input-container border-none outline-0" placeholder="Password" type="text" name="" id="" value={password} onChange={(e) => {
+                <input className="input-container border-none outline-0 w-full" placeholder="Password" type="password" name="" id="" value={password} onChange={(e) => {
                   setPassword(e.target.value)
                 }}
                 />
